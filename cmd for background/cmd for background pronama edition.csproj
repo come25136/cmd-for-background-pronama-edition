@@ -106,7 +106,6 @@
   <ItemGroup>
     <Content Include="cfbpe_icon.ico" />
     <None Include="Resources\201506_club2.png" />
-    <None Include="Resources\pronama3.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
