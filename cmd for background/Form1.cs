@@ -23,9 +23,9 @@ namespace cmd_for_background
             filepass.Text = cfbpe.Properties.Settings.Default.filepass;
             workspece.Text = cfbpe.Properties.Settings.Default.workspece;
 
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            panel1.Parent = pictureBox1;
-            panel1.Location = new Point(0, 0);
+            //pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            //panel1.Parent = pictureBox1;
+            //panel1.Location = new Point(0, 0);
         }
 
         //ファイル or コマンド
@@ -183,6 +183,7 @@ namespace cmd_for_background
             {
                 e.Cancel = true; // フォームが閉じるのをキャンセル
                 this.Visible = false; // フォームの非表示
+                notifyIcon1.ShowBalloonTip(3000);
             }
         }
 

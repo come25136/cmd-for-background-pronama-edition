@@ -105,11 +105,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cfbpe_icon.ico" />
+    <None Include="Resources\201506_club2.png" />
+    <None Include="Resources\pronama3.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>set fname_new="$(TargetName)_merge$(TargetExt)"
-"C:\Program Files (x86)\Microsoft\ILMerge\ILMerge.exe" /wildcards /out:%25fname_new%25 "$(TargetFileName)" *.dll</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
